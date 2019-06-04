@@ -1,7 +1,20 @@
 {
+  "name": "ryu",
+  "version": "1.0.2",
+  "main": "index.js",
+  "repository": "https://github.com/digitalmediakta/express",
+  "license": "MIT",
+  "scripts": {
+    "dev": "nodemon index.js"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.10"
+  },
   "dependencies": {
+    "axios": "^0.18.0",
+    "cheerio": "^1.0.0-rc.2",
+    "cors": "^2.8.5",
     "express": "^4.16.4",
-    "helmet": "^3.18.0",
-    "moment": "^2.24.0"
+    "request": "^2.88.0"
   }
 }
