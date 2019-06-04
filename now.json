@@ -1,1 +1,12 @@
-{"version":2,"name":"express","builds":[{"src":"www/**/*","use":"@now/static"},{"src":"api/**/*.js","use":"@now/node"}],"routes":[{"src":"/","dest":"www/index.html"}]}
+{
+    "version": 2,
+    "name":"ryuu",
+    "alias":["express.yudaryuunosuke.now.sh"],
+    "regions": ["sfo1", "hnd1","gru1"],
+    "builds":[
+        { "src": "index.js", "use": "@now/node-server" }
+    ],
+    "routes":[
+        { "src":".*","dest":"index.js" }
+    ]
+}
